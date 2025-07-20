@@ -14,16 +14,30 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 70px;
+  right: 10px;
+  color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1000;
+}
+
 :root {
 
   /**
    * colors
    */
 
-  --green-blue-crayola: hsl(202, 75%, 47%);
+  --green-blue-crayola: #01235E; 
   --prussian-blue: hsl(202, 72%, 15%);
   --eerie-black: hsl(210, 11%, 15%);
-  --dark-orange: hsl(32, 100%, 50%);
+  --dark-orange: hsl(0, 86%, 49%);
+  --dark-red: hsl(0, 86%, 49%);
   --alice-blue: hsl(203, 100%, 97%);
   --light-gray: hsl(0, 0%, 80%);
   --indigo-dye: hsl(202, 64%, 26%);
@@ -306,6 +320,10 @@ body {
   font-family: var(--ff-oswald);
   color: var(--white);
   font-size: 3rem;
+  display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px; /* espaço entre logo e texto */
 }
 
 .nav-open-btn {
@@ -411,7 +429,7 @@ body {
 }
 
 .hero-title .span {
-  color: var(--dark-orange);
+  color: var(--dark-red);
   font-size: var(--fs-2);
   font-weight: var(--fw-700);
 }
